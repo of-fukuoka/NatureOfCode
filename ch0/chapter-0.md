@@ -12,5 +12,3 @@
  * start up cafe
  * Technical Rockstars 福岡オフィス
 
-
-

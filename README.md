@@ -16,3 +16,11 @@ Nature of codeについていろいろ
 ## yumikokh
 
 未定
+
+# 成果物について
+
+各ch毎に、各人専用ディレクトリに入れていく感じで!
+
+例:「nobkzのch0の時のdir」
+
+NatureOfCode/ch0/nobkz/
