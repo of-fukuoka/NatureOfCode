@@ -6,7 +6,17 @@
 </head>
 <body>
 	<canvas id="canvas"></canvas>
-	<script src="main.js"></script>
+	<script src="global.js"></script>
+	<script src="draw_util.js"></script>
 	<script src="random_walker.js"></script>
+	<script>
+	window.addEventListener("load",function(e){
+		var w = new global.Walker();
+		setInterval(function(){
+			w.display();
+			w.step();
+		},32);
+	});
+	</script>
 </body>
 </html>
