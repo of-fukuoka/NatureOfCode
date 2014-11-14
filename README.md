@@ -15,7 +15,7 @@ Nature of codeについていろいろ
 
 ## yumikokh
 
-未定
+素直にprocessingでやる
 
 # 成果物について
 
