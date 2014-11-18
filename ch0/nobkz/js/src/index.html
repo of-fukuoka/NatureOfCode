@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	<script src="global.js"></script>
+	<script src="draw_util.js"></script>
+	<script src="random_walker.js"></script>
+	<script>
+	window.addEventListener("load",function(e){
+		var ws = [];
+		for(var i = 0; i < 20; i++ ){
+			ws.push(new global.Walker());
+		}
+
+
+		var animationFrame= window.requestAnimationFrame 
+		|| window.webkitRequestAnimationFrame
+     	|| window.mozRequestAnimationFrame
+     	|| window.setTimeout;
+
+     	function animationloop(){
+     		for(var w in ws){
+				for(var i = 0 ; i < 10 ; i++ ){
+					ws[w].display();
+					ws[w].step();
+				}
+			}
+			animationFrame(animationloop, 1000 / 24);
+     	}
+
+
+     	animationloop();
+	});
+	</script>
+</body>
+</html>
